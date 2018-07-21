@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".FetchSong">
+
+
+        <!--<Button-->
+        <!--android:id="@+id/sendSongButton"-->
+        <!--android:layout_width="92dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginBottom="8dp"-->
+        <!--android:layout_marginEnd="8dp"-->
+        <!--android:layout_marginLeft="8dp"-->
+        <!--android:layout_marginRight="8dp"-->
+        <!--android:layout_marginStart="8dp"-->
+        <!--android:layout_marginTop="8dp"-->
+        <!--android:text="Send "-->
+
+        <!--/>-->
+
+        <TextView
+            android:id="@+id/foundTextView"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textSize="16dp" />
+
+
+        <TextView
+            android:id="@+id/nameTextView"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/artistTextView"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/genreTextView"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/showPitch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/matchPitch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16dp" />
+
+    </LinearLayout>
+</ScrollView>
