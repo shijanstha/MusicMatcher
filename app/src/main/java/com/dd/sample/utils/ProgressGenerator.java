@@ -1,8 +1,9 @@
 package com.dd.sample.utils;
 
-import com.dd.processbutton.ProcessButton;
-
 import android.os.Handler;
+import android.util.Log;
+
+import com.dd.processbutton.ProcessButton;
 
 import java.util.Random;
 
@@ -10,7 +11,7 @@ public class ProgressGenerator {
 
     public interface OnCompleteListener {
 
-        public void onComplete();
+//        public void onComplete();
     }
 
     private OnCompleteListener mListener;
@@ -30,7 +31,7 @@ public class ProgressGenerator {
                 if (mProgress < 100) {
                     handler.postDelayed(this, generateDelay());
                 } else {
-                    mListener.onComplete();
+                    Log.d("MusicMatch","complete");
                 }
             }
         }, generateDelay());

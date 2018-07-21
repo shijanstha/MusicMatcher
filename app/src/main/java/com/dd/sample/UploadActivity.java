@@ -3,7 +3,6 @@ package com.dd.sample;
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Toast;
 
 import com.dd.processbutton.iml.GenerateProcessButton;
 import com.dd.sample.utils.ProgressGenerator;
@@ -28,9 +27,9 @@ public class UploadActivity extends Activity implements ProgressGenerator.OnComp
             }
         });
     }
-
-    @Override
-    public void onComplete() {
-        Toast.makeText(this, R.string.Loading_Complete, Toast.LENGTH_LONG).show();
-    }
+//
+//    @Override
+//    public void onComplete() {
+//        Toast.makeText(this, R.string.Loading_Complete, Toast.LENGTH_LONG).show();
+//    }
 }

@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "615106156353",
+    "firebase_url": "https://musicmatcher-f67f1.firebaseio.com",
+    "project_id": "musicmatcher-f67f1",
+    "storage_bucket": "musicmatcher-f67f1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:615106156353:android:95c88e8d84ab4366",
+        "android_client_info": {
+          "package_name": "com.shijan.musicmatcher"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "615106156353-317fmfgki7dpbfv898sgq7cftor4boqm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB009ee7zBVhSKGE1daq04wAFgOEKfh02o"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

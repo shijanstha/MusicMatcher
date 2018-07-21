@@ -4,7 +4,6 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
-import android.widget.Toast;
 
 import com.dd.processbutton.iml.SubmitProcessButton;
 import com.dd.sample.utils.ProgressGenerator;
@@ -32,9 +31,9 @@ public class MessageActivity extends Activity implements ProgressGenerator.OnCom
         });
     }
 
-    @Override
-    public void onComplete() {
-        Toast.makeText(this, R.string.Loading_Complete, Toast.LENGTH_LONG).show();
-    }
+//    @Override
+//    public void onComplete() {
+//        Toast.makeText(this, R.string.Loading_Complete, Toast.LENGTH_LONG).show();
+//    }
 
 }

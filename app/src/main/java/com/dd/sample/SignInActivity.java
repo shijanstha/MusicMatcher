@@ -34,8 +34,8 @@ public class SignInActivity extends Activity implements ProgressGenerator.OnComp
         super.onCreate(savedInstanceState);
         setContentView(R.layout.ac_sign_in);
 
-        mEmailView = (AutoCompleteTextView) findViewById(R.id.login_email);
-        mPasswordView = (EditText) findViewById(R.id.editPassword);
+        mEmailView = findViewById(R.id.login_email);
+        mPasswordView = findViewById(R.id.editPassword);
 
         final ProgressGenerator progressGenerator = new ProgressGenerator(this);
         final ActionProcessButton btnSignIn = (ActionProcessButton) findViewById(R.id.btnSignIn);
@@ -52,9 +52,14 @@ public class SignInActivity extends Activity implements ProgressGenerator.OnComp
                 btnSignIn.setEnabled(false);
                 mEmailView.setEnabled(false);
                 mPasswordView.setEnabled(false);
-                attemptLogin();
+
             }
         });
+        mAuth = FirebaseAuth.getInstance();
+    }
+
+    public void signInWithExistingUser() {
+        attemptLogin();
     }
 
     private void attemptLogin() {
@@ -92,9 +97,10 @@ public class SignInActivity extends Activity implements ProgressGenerator.OnComp
                 .show();
     }
 
-    @Override
-    public void onComplete() {
-        Toast.makeText(this, "Successful!", Toast.LENGTH_LONG).show();
+    public void registerNewUser(View view) {
+        Intent intent = new Intent(this, com.shijan.musicmatcher.RegisterActivity.class);
+        finish();
+        startActivity(intent);
     }
 }
 

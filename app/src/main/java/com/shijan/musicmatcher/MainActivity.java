@@ -33,7 +33,7 @@ import be.tarsos.dsp.pitch.PitchProcessor;
 public class MainActivity extends AppCompatActivity {
     EditText mEditTextName;
     EditText mEditTextArtist;
-    Spinner mSpinnerGeneres;
+    Spinner mSpinnerGenres;
     TextView mSizeTextView;
 
     int count = 0;
@@ -51,14 +51,14 @@ public class MainActivity extends AppCompatActivity {
 
         mEditTextName = (EditText) findViewById(R.id.editTextName);
         mEditTextArtist = findViewById(R.id.editTextArtist);
-        mSpinnerGeneres = findViewById(R.id.spinnerGeneres);
+        mSpinnerGenres = findViewById(R.id.spinnerGeneres);
         mSizeTextView = findViewById(R.id.sizeView);
 
 
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
                 R.array.generes, android.R.layout.simple_spinner_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        mSpinnerGeneres.setAdapter(adapter);
+        mSpinnerGenres.setAdapter(adapter);
 
 
         mSongDatabase = FirebaseDatabase.getInstance().getReference("songs");
@@ -118,7 +118,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void calculate() {
-        Log.d(TAG, "calcubsajldadasdlate: " + mylist.getClass());
+        Log.d(TAG, "calculate: " + mylist.getClass());
 
         Set<Integer> set = new LinkedHashSet<Integer>(mylist);
         Integer[] data = new Integer[set.size()];
@@ -137,7 +137,7 @@ public class MainActivity extends AppCompatActivity {
         String name = mEditTextName.getText().toString().trim();
         String artist = mEditTextArtist.getText().toString().trim();
 
-        String genre = mSpinnerGeneres.getSelectedItem().toString();
+        String genre = mSpinnerGenres.getSelectedItem().toString();
 
         if (!TextUtils.isEmpty(name) || !TextUtils.isEmpty(artist)) {
             Log.d(TAG, "addSong: inside the if statement");
